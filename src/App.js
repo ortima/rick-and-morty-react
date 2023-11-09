@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css'
+import Search from './components/NavBar/Search'
+import Title from './components/NavBar/Title'
+import Menu from './components/NavBar/Menu'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="flex w-full py-4 justify-around items-center bg-blue text-white">
+            <Title />
+            <Search />
+            <Menu />
+        </div>
+    )
 }
 
-export default App;
+export default App
